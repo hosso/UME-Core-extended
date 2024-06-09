@@ -128,6 +128,73 @@ static os_log_t OE_CORE_LOG, OE_CORE_AUDIT_LOG;
     InputDevice *kb = [_osd.keyboard addDeviceNamed:@"OpenEmu Keyboard"];
     [kb addItemNamed:@"Service" id:InputItemID_F2 getter:joystick_get_state context:&_buttons[0][OEArcadeButtonService]];
     [kb addItemNamed:@"UI Configure" id:InputItemID_TAB getter:joystick_get_state context:&_buttons[0][OEArcadeUIConfigure]];
+
+    // Keyboard keys
+    [kb addItemNamed:@"A" id:InputItemID_A getter:joystick_get_state context:&_buttons[0][OEArcadeA]];
+    [kb addItemNamed:@"B" id:InputItemID_B getter:joystick_get_state context:&_buttons[0][OEArcadeB]];
+    [kb addItemNamed:@"C" id:InputItemID_C getter:joystick_get_state context:&_buttons[0][OEArcadeC]];
+    [kb addItemNamed:@"D" id:InputItemID_D getter:joystick_get_state context:&_buttons[0][OEArcadeD]];
+    [kb addItemNamed:@"E" id:InputItemID_E getter:joystick_get_state context:&_buttons[0][OEArcadeE]];
+    [kb addItemNamed:@"F" id:InputItemID_F getter:joystick_get_state context:&_buttons[0][OEArcadeF]];
+    [kb addItemNamed:@"G" id:InputItemID_G getter:joystick_get_state context:&_buttons[0][OEArcadeG]];
+    [kb addItemNamed:@"H" id:InputItemID_H getter:joystick_get_state context:&_buttons[0][OEArcadeH]];
+    [kb addItemNamed:@"I" id:InputItemID_I getter:joystick_get_state context:&_buttons[0][OEArcadeI]];
+    [kb addItemNamed:@"J" id:InputItemID_J getter:joystick_get_state context:&_buttons[0][OEArcadeJ]];
+    [kb addItemNamed:@"K" id:InputItemID_K getter:joystick_get_state context:&_buttons[0][OEArcadeK]];
+    [kb addItemNamed:@"L" id:InputItemID_L getter:joystick_get_state context:&_buttons[0][OEArcadeL]];
+    [kb addItemNamed:@"M" id:InputItemID_M getter:joystick_get_state context:&_buttons[0][OEArcadeM]];
+    [kb addItemNamed:@"N" id:InputItemID_N getter:joystick_get_state context:&_buttons[0][OEArcadeN]];
+    [kb addItemNamed:@"O" id:InputItemID_O getter:joystick_get_state context:&_buttons[0][OEArcadeO]];
+    // Assign P to the colon key instead of Pause
+    [kb addItemNamed:@"P" id:InputItemID_COLON getter:joystick_get_state context:&_buttons[0][OEArcadeP]];
+    // [kb addItemNamed:@"P" id:InputItemID_P getter:joystick_get_state context:&_buttons[0][OEArcadeP]];
+    [kb addItemNamed:@"Q" id:InputItemID_Q getter:joystick_get_state context:&_buttons[0][OEArcadeQ]];
+    [kb addItemNamed:@"R" id:InputItemID_R getter:joystick_get_state context:&_buttons[0][OEArcadeR]];
+    [kb addItemNamed:@"S" id:InputItemID_S getter:joystick_get_state context:&_buttons[0][OEArcadeS]];
+    [kb addItemNamed:@"T" id:InputItemID_T getter:joystick_get_state context:&_buttons[0][OEArcadeT]];
+    [kb addItemNamed:@"U" id:InputItemID_U getter:joystick_get_state context:&_buttons[0][OEArcadeU]];
+    [kb addItemNamed:@"V" id:InputItemID_V getter:joystick_get_state context:&_buttons[0][OEArcadeV]];
+    [kb addItemNamed:@"W" id:InputItemID_W getter:joystick_get_state context:&_buttons[0][OEArcadeW]];
+    [kb addItemNamed:@"X" id:InputItemID_X getter:joystick_get_state context:&_buttons[0][OEArcadeX]];
+    [kb addItemNamed:@"Y" id:InputItemID_Y getter:joystick_get_state context:&_buttons[0][OEArcadeY]];
+    [kb addItemNamed:@"Z" id:InputItemID_Z getter:joystick_get_state context:&_buttons[0][OEArcadeZ]];
+    [kb addItemNamed:@"0" id:InputItemID_0 getter:joystick_get_state context:&_buttons[0][OEArcade0]];
+    [kb addItemNamed:@"1" id:InputItemID_1 getter:joystick_get_state context:&_buttons[0][OEArcade1]];
+    [kb addItemNamed:@"2" id:InputItemID_2 getter:joystick_get_state context:&_buttons[0][OEArcade2]];
+    [kb addItemNamed:@"3" id:InputItemID_3 getter:joystick_get_state context:&_buttons[0][OEArcade3]];
+    [kb addItemNamed:@"4" id:InputItemID_4 getter:joystick_get_state context:&_buttons[0][OEArcade4]];
+    [kb addItemNamed:@"5" id:InputItemID_5 getter:joystick_get_state context:&_buttons[0][OEArcade5]];
+    [kb addItemNamed:@"6" id:InputItemID_6 getter:joystick_get_state context:&_buttons[0][OEArcade6]];
+    [kb addItemNamed:@"7" id:InputItemID_7 getter:joystick_get_state context:&_buttons[0][OEArcade7]];
+    [kb addItemNamed:@"8" id:InputItemID_8 getter:joystick_get_state context:&_buttons[0][OEArcade8]];
+    [kb addItemNamed:@"9" id:InputItemID_9 getter:joystick_get_state context:&_buttons[0][OEArcade9]];
+    // Disable ESC key
+    // [kb addItemNamed:@"ESC" id:InputItemID_ESC getter:joystick_get_state context:&_buttons[0][OEArcadeESC]];
+    // Disable the On Screen Display
+    // [kb addItemNamed:@"TILDE" id:InputItemID_TILDE getter:joystick_get_state context:&_buttons[0][OEArcadeTILDE]];
+    [kb addItemNamed:@"MINUS" id:InputItemID_MINUS getter:joystick_get_state context:&_buttons[0][OEArcadeMINUS]];
+    [kb addItemNamed:@"EQUALS" id:InputItemID_EQUALS getter:joystick_get_state context:&_buttons[0][OEArcadeEQUALS]];
+    [kb addItemNamed:@"BACKSPACE" id:InputItemID_BACKSPACE getter:joystick_get_state context:&_buttons[0][OEArcadeBACKSPACE]];
+    [kb addItemNamed:@"TAB" id:InputItemID_TAB getter:joystick_get_state context:&_buttons[0][OEArcadeTAB]];
+    [kb addItemNamed:@"OPENBRACE" id:InputItemID_OPENBRACE getter:joystick_get_state context:&_buttons[0][OEArcadeOPENBRACE]];
+    [kb addItemNamed:@"CLOSEBRACE" id:InputItemID_CLOSEBRACE getter:joystick_get_state context:&_buttons[0][OEArcadeCLOSEBRACE]];
+    [kb addItemNamed:@"ENTER" id:InputItemID_ENTER getter:joystick_get_state context:&_buttons[0][OEArcadeENTER]];
+    [kb addItemNamed:@"COLON" id:InputItemID_COLON getter:joystick_get_state context:&_buttons[0][OEArcadeCOLON]];
+    [kb addItemNamed:@"QUOTE" id:InputItemID_QUOTE getter:joystick_get_state context:&_buttons[0][OEArcadeQUOTE]];
+    [kb addItemNamed:@"BACKSLASH" id:InputItemID_BACKSLASH getter:joystick_get_state context:&_buttons[0][OEArcadeBACKSLASH]];
+    [kb addItemNamed:@"BACKSLASH2" id:InputItemID_BACKSLASH2 getter:joystick_get_state context:&_buttons[0][OEArcadeBACKSLASH2]];
+    [kb addItemNamed:@"COMMA" id:InputItemID_COMMA getter:joystick_get_state context:&_buttons[0][OEArcadeCOMMA]];
+    [kb addItemNamed:@"STOP" id:InputItemID_STOP getter:joystick_get_state context:&_buttons[0][OEArcadeSTOP]];
+    [kb addItemNamed:@"SLASH" id:InputItemID_SLASH getter:joystick_get_state context:&_buttons[0][OEArcadeSLASH]];
+    [kb addItemNamed:@"SPACE" id:InputItemID_SPACE getter:joystick_get_state context:&_buttons[0][OEArcadeSPACE]];
+    [kb addItemNamed:@"LSHIFT" id:InputItemID_LSHIFT getter:joystick_get_state context:&_buttons[0][OEArcadeLSHIFT]];
+    [kb addItemNamed:@"RSHIFT" id:InputItemID_RSHIFT getter:joystick_get_state context:&_buttons[0][OEArcadeRSHIFT]];
+    [kb addItemNamed:@"LCONTROL" id:InputItemID_LCONTROL getter:joystick_get_state context:&_buttons[0][OEArcadeLCONTROL]];
+    [kb addItemNamed:@"RCONTROL" id:InputItemID_RCONTROL getter:joystick_get_state context:&_buttons[0][OEArcadeRCONTROL]];
+    [kb addItemNamed:@"LALT" id:InputItemID_LALT getter:joystick_get_state context:&_buttons[0][OEArcadeLALT]];
+    [kb addItemNamed:@"RALT" id:InputItemID_RALT getter:joystick_get_state context:&_buttons[0][OEArcadeRALT]];
+    [kb addItemNamed:@"LWIN" id:InputItemID_LWIN getter:joystick_get_state context:&_buttons[0][OEArcadeLWIN]];
+    [kb addItemNamed:@"RWIN" id:InputItemID_RWIN getter:joystick_get_state context:&_buttons[0][OEArcadeRWIN]];
 }
 
 - (void)didChangeDisplayBounds:(NSSize)bounds fps:(double)fps aspect:(NSSize)aspect
